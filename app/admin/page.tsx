@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/utils/supabase/client'
-import { Languages, RefreshCw, Filter, X, TrendingUp, Phone, Printer, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react'
+import { Languages, RefreshCw, Filter, X, TrendingUp, Phone, Printer, ArrowUpDown, ArrowUp, ArrowDown, QrCode } from 'lucide-react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import { OUTLETS } from '@/utils/outlets'
 
@@ -132,6 +132,9 @@ export default function AdminPage() {
             </div>
           </div>
           <div className="flex gap-3">
+            <a href="/barcodes" className="px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center gap-2 text-sm font-bold">
+              <QrCode size={16} /> Barcode Outlet
+            </a>
             <button onClick={handlePrint} className="px-5 py-2.5 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition flex items-center gap-2 text-sm font-bold">
               <Printer size={16} /> Print Data
             </button>

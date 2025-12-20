@@ -36,6 +36,13 @@
 4. Filter berdasarkan score menggunakan tombol filter
 5. Data dapat di-print
 
+### Untuk Mendapatkan Barcode/QR Code
+1. Buka `/barcodes` atau klik tombol **"Barcode Outlet"** di admin dashboard
+2. Halaman akan menampilkan semua QR code untuk 5 outlet
+3. Setiap QR code bisa di-download sebagai gambar PNG
+4. QR code bisa di-print untuk ditempel di setiap outlet
+5. Scan QR code dengan smartphone akan langsung mengarah ke halaman feedback outlet tersebut
+
 ## Update Database Schema
 
 Pastikan tabel `nps_submissions` di Supabase memiliki kolom berikut:
