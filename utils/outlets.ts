@@ -35,6 +35,12 @@ export const OUTLETS: Outlet[] = [
     name: 'damar-tea-patisserie',
     barcode: 'DTP005',
     displayName: 'Damar Tea & Patisserie'
+  },
+  {
+    id: 'tamu-group',
+    name: 'tamu-group',
+    barcode: 'TG006',
+    displayName: 'Tamu Group'
   }
 ]
 
@@ -45,4 +51,3 @@ export function getOutletByBarcode(barcode: string): Outlet | undefined {
 export function getOutletById(id: string): Outlet | undefined {
   return OUTLETS.find(outlet => outlet.id === id)
 }
-
